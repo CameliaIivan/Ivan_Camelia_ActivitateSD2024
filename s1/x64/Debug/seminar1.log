@@ -1,0 +1,6 @@
+﻿  Main.c
+C:\Users\ivanc\Desktop\csie\D1057\sdd\seminar1\seminar1\Main.c(32,18): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\ivanc\Desktop\csie\D1057\sdd\seminar1\seminar1\Main.c(33,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\ivanc\Desktop\csie\D1057\sdd\seminar1\seminar1\Main.c(71,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\ivanc\Desktop\csie\D1057\sdd\seminar1\seminar1\Main.c(91,12): error C2440: 'function': cannot convert from 'Cofetarie *' to 'Cofetarie'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\seminar1\seminar1\Main.c(91,12): warning C4024: 'stergecof': different types for formal and actual parameter 1

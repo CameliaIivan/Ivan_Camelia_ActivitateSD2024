@@ -1,0 +1,29 @@
+﻿  source.c
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(16,42): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(17,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(39,19): error C2065: 'nrObiectecop': undeclared identifier
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(55,18): error C2065: 'nrfarmaciiMici': undeclared identifier
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(55,2): error C2100: you cannot dereference an operand of type 'int'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(57,15): error C2083: struct comparison illegal
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(57,20): error C2143: syntax error: missing ';' before '<'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(57,26): error C2059: syntax error: ')'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(57,27): error C2143: syntax error: missing ';' before '{'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(65,15): error C2083: struct comparison illegal
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(65,20): error C2143: syntax error: missing ';' before '<'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(65,26): error C2059: syntax error: ')'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(65,27): error C2143: syntax error: missing ';' before '{'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(66,43): error C2037: left of 'id' specifies undefined struct/union 'Farmacii'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(66,59): error C2037: left of 'nume' specifies undefined struct/union 'Farmacii'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(66,77): error C2037: left of 'suprafata' specifies undefined struct/union 'Farmacii'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(66,18): error C2198: 'initializareFarm': too few arguments for call
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(89,2): error C2440: 'return': cannot convert from 'void *' to 'Farmacie'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(102,60): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(110,28): error C2065: 'vectorCopiat': undeclared identifier
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(110,16): warning C4047: 'function': 'Farmacie *' differs in levels of indirection from 'int'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(110,16): warning C4024: 'afisareVector': different types for formal and actual parameter 1
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(110,42): error C2065: 'nrObiectecop': undeclared identifier
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(116,54): warning C4133: 'function': incompatible types - from 'Farmacie *' to 'Farmacii *'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(118,16): warning C4133: 'function': incompatible types - from 'Farmcaie *' to 'Farmacie *'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(121,70): error C2059: syntax error: ','
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(128,27): warning C4133: 'function': incompatible types - from 'Farmcaie **' to 'Farmacie **'
+C:\Users\ivanc\Desktop\csie\D1057\sdd\semianar2bun\semianar2bun\source.c(116,19): warning C4133: 'initializing': incompatible types - from 'Farmacie *' to 'Farmcaie *'
