@@ -1,0 +1,50 @@
+sdd - seminar - 1065 - 24.02 -- https://github.com/gabivas/SDD2025
+//https://github.com/gabivas/SDD2025
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdlib.h>
+#include <stdio.h>
+#include <malloc.h>
+
+void interschimbare(int* numar1, int* numar2) {
+	int aux;
+	aux = *numar1;
+	*numar1 = *numar2;
+	*numar2 = aux;
+}
+
+
+void main() {
+	int numarTeme = 5;
+	float medieFinal = 10.0f;
+	char litera = 'a';
+
+	printf("Numar teme: %d, \nMedia finala: %.2f, \nLitera: %c, \nLitera ca numar intreg: %d\n", numarTeme, medieFinal, litera, litera);
+
+	char sirCaractere[5];
+	sirCaractere[0] = 97;
+	sirCaractere[1] = 98;
+	sirCaractere[2] = 99;
+	sirCaractere[3] = 100;
+	sirCaractere[4] = '\0';
+	printf("Sir: %s\n", sirCaractere);
+
+	//alocare dinamica
+	char* nume = (char*)malloc(sizeof(char) * 6);
+	strcpy(nume, "Mihai");
+	printf("Numele este %s", nume);
+
+	int numar1 = 7;
+	int numar2 = 9;
+	interschimbare(&numar1,&numar2); // trimit adrese, nu valori ca sa aiba efect -- la trasmiterea prin adresa nu pun & nici * in antetul functiei
+	//functia e in afara clasei
+	//metodae in clase deci in c nu exista
+	//mereu cand discutam valoarea de la adresa unui pointer trebuiesa dereferentiem -- steluta in functie *
+
+	printf("\nNuma1 = %d, numar2 = %d\n", numar1, numar2);
+
+
+	//dezalocare
+	free(nume);
+	//trnsmiterea de pointeri in memorie nu aloca memorie deci nu face memory leeks
+}
