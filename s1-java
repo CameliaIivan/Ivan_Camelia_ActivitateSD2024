@@ -1,0 +1,67 @@
+seminar Java - Ionita - 25.02.2025
+in src avem Main si ProgramVector
+ca sa pun valori in vector --- din program vector, pe triunghiul de la randul 2(main) -- click ddr, modify configuration -- la build and run pun 1,2,3,4
+program vector: 
+public class ProgramVector {
+    //functie de afisare
+    static void afisare(int[] vector, String mesaj){
+        System.out.print(mesaj + ": ");
+        for (var element:vector){
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+    //o functie care sa incrementeze lem din vector
+    //se face transmitere prin valoare(doar asta exista in java) - o sa se copieze in functie adresa lui v
+    static void incrementare(int[] vector){
+        for (int index = 0;index< vector.length;index++){
+            vector[index]++;
+        }
+    }
+    static int[] inserareValoare(int[] vector, int valoare){
+        int[] temp = new int[vector.length + 1];
+        temp[0] = valoare;
+        for (int index=0;index<vector.length;index++){
+            temp[index+1] = vector[index];
+        }
+        return temp;//returnam vectorul nou cu n+1 pozitii, si il atribuim la apel vectorului initial
+    }
+
+    public static void main(String[] args) {
+        //pas 1  System.out.println(args[0]); ca sa afisez vectorul
+        //apoi, ca sa afizex vectorul cu numere
+        var vSiruri = args[0].split(",");
+        int[] v = new int[vSiruri.length];//pt v se aloca spatiu pe stiva - spatiu cat e necesar sa stocheze o adresa
+
+        for (var index = 0; index < vSiruri.length; index++){
+            v[index] = Integer.parseInt(vSiruri[index]);
+        }
+        //System.out.println(v);
+        afisare(v, "Initial");
+        incrementare(v);
+        afisare(v, "Dupa Incrementare");
+        v = inserareValoare(v, 10);
+        afisare(v, "Dupa Inserare");
+    }
+}
+main:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        var scanner = new Scanner(System.in);
+        System.out.print("Nume: ");
+        var nume = scanner.nextLine();
+        System.out.printf("Hello %s!%n", nume);
+
+        System.out.print("a= ");
+        int a = Integer.parseInt(scanner.nextLine()); //scanner.nextInt() .. daca punem asa la nume 2 mai adaugam o linie de cod cu scanner.nextLine() ca sa se actualizeze scanerul
+        System.out.print("b= ");
+        int b = Integer.parseInt(scanner.nextLine());
+        System.out.printf("%d + %d = %d%n", a, b, a+b);
+
+        System.out.print("Nume: ");
+        var nume2 = scanner.nextLine();
+        System.out.printf("Hello %s!%n", nume2);
+    }
+}
